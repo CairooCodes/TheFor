@@ -4,12 +4,7 @@
      foreach ($banners as $banners){
     ?>
       <div class="swiper-slide">
-        <?php
-        if (!empty($banners['img'])) {
-          $img = base64_encode($banners['img']);
-          echo "<img class='w-full' src='data:image/jpeg;base64," . $img . "'>";
-        }
-        ?>
+      <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banners['img'] ?>'>;
       </div>
     <?php
     }
