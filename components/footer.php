@@ -1,14 +1,14 @@
-<footer class="mt-8 shadow-inner">
+<footer class="mt-8 shadow-inner bg-color2">
 	<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
 			<div>
 				<a href="<?php echo $URI->base("/home"); ?>">
 					<img src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
 				</a>
-				<p class="mt-4 max-w-xs text-sm text-color1">
-					Associação do Pessoal da Caixa Econômica Federal - Piauí
+				<p class="mt-4 max-w-xs text-sm text-white">
+				Centro de Formação de Vigilantes
 				</p>
-				<div class="mt-8 flex space-x-6 text-color1">
+				<div class="mt-8 flex space-x-6 text-white">
 					<a class="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
 						<span class="sr-only"> Facebook </span>
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -31,36 +31,54 @@
 			</div>
 			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
 				<div>
-					<p class="font-medium text-color1">APCEF/PI</p>
-					<nav class="mt-4 flex flex-col space-y-2 text-sm text-color1">
+					<p class="font-medium text-white">CURSOS/TREINAMENTOS</p>
+					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
 						<a class="hover:opacity-75" href="./quem-somos.php">
-							MISSÃO, VISSÃO, VALORES
+							Escolta Armada
 						</a>
 						<a class="hover:opacity-75" href="./diretoria.php">
-							DIRETORIA
+							Extensão em Segurança Pessoal Privada
 						</a>
 						<a class="hover:opacity-75" href="./sedes.php">
-							SEDES
+							Formação de Vigilantes
+						</a>
+						<a class="hover:opacity-75" href="./sedes.php">
+							Inspetor e supervisor
+						</a>
+
+						<a class="hover:opacity-75" href="./sedes.php">
+							Segurança em Grandes Eventos
+						</a>
+
+						<a class="hover:opacity-75" href="./sedes.php">
+							Transporte de Valores
+						</a>
+
+					</nav>
+				</div>
+				<div>
+					<p class="font-medium text-white mb-10"></p>
+					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
+						<a class="hover:opacity-75" href="./sedes.php">
+							Reciclagem de Escolta Armada
+						</a>
+
+						<a class="hover:opacity-75" href="./sedes.php">
+							Reciclagem de Transporte de Valores
+						</a>
+
+						<a class="hover:opacity-75" href="./sedes.php">
+							Reciclagem de Vigilante
+						</a>
+
+						<a class="hover:opacity-75" href="./sedes.php">
+							Segurança bancária
 						</a>
 					</nav>
 				</div>
 				<div>
-					<p class="font-medium text-color1">SERVIÇOS</p>
-					<nav class="mt-4 flex flex-col space-y-2 text-sm text-color1">
-						<a class="hover:opacity-75" href="#">
-							ASSOCIE-SE
-						</a>
-						<a class="hover:opacity-75" href="#">
-							APCEF SAÚDE
-						</a>
-						<a class="hover:opacity-75" href="./esportes.php">
-							ESPORTES
-						</a>
-					</nav>
-				</div>
-				<div>
-					<p class="font-medium text-color1">MAIS INFORAMÇÕES</p>
-					<nav class="mt-4 flex flex-col space-y-2 text-sm text-color1">
+					<p class="font-medium text-white">MAIS INFORAMÇÕES</p>
+					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
 						<a class="hover:opacity-75" href="#">
 							CONTATOS
 						</a>
@@ -70,8 +88,8 @@
 					</nav>
 				</div>
 				<div>
-					<p class="font-medium text-color1">LEGAL</p>
-					<nav class="mt-4 flex flex-col space-y-2 text-sm text-color1">
+					<p class="font-medium text-white">LEGAL</p>
+					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
 						<a class="hover:opacity-75" href="#">
 							PRIVACIDADE
 						</a>
@@ -82,8 +100,8 @@
 				</div>
 			</div>
 		</div>
-		<p class="mt-8 text-xs text-color1">
-			Associação do Pessoal da Caixa Econômica Federal - Piauí
+		<p class="mt-8 text-xs text-white">
+			THEFOR Treinamentos. Todos os direitos reservados ©cairoocodes 2023
 		</p>
 	</div>
 </footer>
