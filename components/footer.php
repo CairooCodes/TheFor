@@ -3,7 +3,7 @@
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
 			<div>
 				<a href="<?php echo $URI->base("/home"); ?>">
-					<img src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
+					<img src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="logo" alt="<?php echo $title; ?>" />
 				</a>
 				<p class="mt-4 max-w-xs text-sm text-white">
 				Centro de Formação de Vigilantes

@@ -3,7 +3,7 @@ require "db_config.php";
 require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
-
+$banners = getBanners();
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ require "./functions/get.php";
 
 <body>
 	<?php include "components/navbar.php";?>
-	
+	<?php include "components/banners.php";?>
 	
 	<?php include "components/footer.php";?>
 

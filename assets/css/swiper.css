@@ -12,5 +12,5 @@
 @media (min-width: 768px) {}
 
 .swiper-pagination-bullet-active {
-  background-color: orange;
+  background-color: red;
 }
