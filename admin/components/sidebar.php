@@ -1,6 +1,6 @@
 <aside class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%] border border-gray-200">
   <div>
-    <div class="px-6">
+    <div class="px-6 flex justify-center">
       <a href="#" title="home">
         <img class="w-full p-3" src="../assets/img/logo.png">
       </a>
