@@ -16,10 +16,10 @@ function getBanners()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getProducts()
+function getServices()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM products order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM services order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

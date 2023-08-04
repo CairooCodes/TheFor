@@ -1,10 +1,10 @@
 <section class="mt-20 mb-4 swiper swiper_banners">
   <div class="swiper-wrapper">
     <?php
-     foreach ($banners as $banners){
+     foreach ($banners as $banner){
     ?>
       <div class="swiper-slide">
-      <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banners['img'] ?>'>;
+      <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banner['img'] ?>'>;
       </div>
     <?php
     }
