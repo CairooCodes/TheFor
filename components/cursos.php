@@ -6,13 +6,13 @@
 					<div class="swiper-slide my-4 mx-1">
 						<div class="max-w-lg p-3 mx-auto rounded-md shadow-csc">
 							<div>
-								<img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/cursos/<?php echo $services['img'] ?>'>
+								<img class='lazy rounded-md h-52 w-full' src='./admin/uploads/cursos/<?php echo $services['img'] ?>'>
 							</div>
 							<div class="rounded-2xl">
-								<h3 class="post-title mb-4 text-lg font-semibold py-2"><?php echo $services['name']; ?></h3>
+								<h3 class="post-title mb-4 text-lg text-center font-semibold py-2"><?php echo $services['name']; ?><br><?php echo $services['turno']; ?><br>DATA:<?php echo $services['curso_data']; ?></h3>
 							</div>
 							<div class="flex justify-center mt-4">
-								<a href="<?php echo $URI->base('curso/' . slugify($services['name'])); ?>" class="text-white bg-color2 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+							<a href="<?php echo $URI->base('/curso/' . slugify($services['name'])); ?>" class="text-white bg-color2 focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
 							</div>
 						</div>
 					</div>

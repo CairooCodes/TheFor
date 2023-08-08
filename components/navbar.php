@@ -87,7 +87,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     </div>
   </div>
 </header>
-<button>
+<!-- <button>
   <a data-modal-target="addContatoModal" data-modal-show="addContatoModal" class="pointer">
     <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="btn_whats flex gap-2 justify-center items-center bg-color2">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
@@ -96,4 +96,4 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <h6 class="">Entre em contato aqui</h6>
     </div>
   </a>
-</button>
+</button> -->
