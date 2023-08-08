@@ -100,8 +100,8 @@
 				</div>
 			</div>
 		</div>
-		<p class="mt-8 text-xs text-white">
-			THEFOR Treinamentos. Todos os direitos reservados ©cairoocodes 2023
+		<p class="mt-8 text-xs text-white text-center">
+			THEFOR THEFOR - Centro de Formação de Vigilantes. Todos os direitos reservados <br>©cairoocodes 2023
 		</p>
 	</div>
 </footer>

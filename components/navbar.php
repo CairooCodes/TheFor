@@ -56,7 +56,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
                     <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                       <div class="bg-color2 text-white rounded-lg p-3">
-                      <i class="bi bi-geo-alt-fill md:h-6 md:w-6 h-4 w-4"></i>
+                        <i class="bi bi-geo-alt-fill md:h-6 md:w-6 h-4 w-4"></i>
                       </div>
                       <div class="ml-3">
                         <p class="font-semibold">Nossas instalações</p>
@@ -64,8 +64,8 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     </a>
 
                     <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                    <div class="bg-color2 text-white rounded-lg p-3">
-                      <i class="bi bi-image md:h-6 md:w-6 h-4 w-4"></i>
+                      <div class="bg-color2 text-white rounded-lg p-3">
+                        <i class="bi bi-image md:h-6 md:w-6 h-4 w-4"></i>
                       </div>
                       <div class="ml-3">
                         <p class="font-semibold">Galeria de fotos</p>
@@ -80,18 +80,20 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">DOCUMENTAÇÃO</a>
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">FAQ</a>
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">FALE CONOSCO</a>
-            <a style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" class="px-4 py-2 mt-2 text-sm font-semibold bg-color2 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white shadow-lg" href="#">Calendário de cursos</a>
+            <button><a style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" class="px-4 py-2 mt-2 text-sm font-semibold bg-color2 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white shadow-lg" data-modal-target="addCursoModal" data-modal-show="addCursoModal">Calendário de cursos</a></button>
           </nav>
         </div>
       </div>
     </div>
   </div>
 </header>
-<a data-modal-target="addUserModal" data-modal-show="addUserModal" class="pointer">
-  <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="btn_whats flex gap-2 justify-center items-center bg-color2">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-      <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
-    </svg>
-    <h6 class="">Entre em contato aqui</h6>
-  </div>
-</a>
+<button>
+  <a data-modal-target="addContatoModal" data-modal-show="addContatoModal" class="pointer">
+    <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="btn_whats flex gap-2 justify-center items-center bg-color2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
+      </svg>
+      <h6 class="">Entre em contato aqui</h6>
+    </div>
+  </a>
+</button>

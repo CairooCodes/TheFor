@@ -9,7 +9,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	extract($row);
 }
 ?>
-<title><?php echo $title; ?></title>
+<title>THEFOR - Centro de Formação de Vigilantes</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

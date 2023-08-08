@@ -19,7 +19,7 @@ function getBanners()
 function getServices()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM services order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM services order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
