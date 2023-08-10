@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[3];
 
 $idpost2 = "";
 
@@ -51,21 +51,21 @@ if ($stmt->rowCount() > 0) {
 <body>
 	<?php include "components/navbar.php"; ?>
 	<div class="mx-auto max-w-7xl px-2 pt-4">
-		<?php foreach ($services as $services) { ?>
-			<h1 style="color: #A20202;" class="text-center mt-36 text-3xl flex justify-center font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $services['name']; ?></h1>
+		<?php foreach ($services as $service) { ?>
+			<h1 style="color: #A20202;" class="text-center mt-36 text-3xl flex justify-center font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $service['name']; ?></h1>
 			<div class="grid grid-cols-2 gap-4">
 				<div class="mb-8 mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
 					<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="flex justify-center swiper mySwiper2">
-						<?php echo "<img class='lazy rounded-md h-full w-2/3 object-cover' src=" . $URI->base('/admin/uploads/cursos') . '/' . $services['img'] . '>' ?>
+						<?php echo "<img class='lazy rounded-md h-full w-2/3 object-cover' src=" . $URI->base('/admin/uploads/cursos') . '/' . $service['img'] . '>' ?>
 					</div>
 				</div>
 				<div>
 					<p style="color: #A20202;" class="title-font p-4 text-md mb-1 font-semibold">DESCRIÇÃO</p>
 					<h2 class="title-font text-md mb-1">
-						<?php echo $services['info']; ?>
+						<?php echo $service['info']; ?>
 					</h2>
 					<h2 class="title-font text-md mb-1 mt-2">
-						<?php echo $services['turno']; ?>
+						<?php echo $service['turno']; ?>
 					</h2>
 				</div>
 			</div>

@@ -34,7 +34,7 @@ $URI = new URI();
                             <?php echo $service['name']; ?>
                         </h1>
                         <div class="flex justify-center">
-                            <a href="<?php echo $URI->base('curso/' . slugify($service['name'])); ?>">
+                            <a href="<?php echo $URI->base('/curso/' . slugify($service['name'])); ?>">
                                 <button class="shadow-cla-blue mt-4 mb-4 rounded-lg bg-red-800 px-4 py-1 text-white drop-shadow-md hover:scale-105">
                                     Saiba Mais
                                 </button>
