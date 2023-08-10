@@ -3,9 +3,9 @@
     <?php
      foreach ($banners as $banner){
     ?>
-      <div class="swiper-slide">
+      <a class="swiper-slide" href="<?php echo $banner['link']; ?>">>
       <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banner['img'] ?>'>
-      </div>
+     </a>
     <?php
     }
     ?>
