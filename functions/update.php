@@ -62,3 +62,12 @@ function updateProducts($id, $esporte, $description, $img)
   }
   $stmt->execute();
 }
+
+function updateAbout($id, $texto)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("UPDATE about SET texto=:texto WHERE id = :id");
+  $stmt->bindParam(':texto', $texto);
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
+}
