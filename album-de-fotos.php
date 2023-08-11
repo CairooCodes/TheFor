@@ -54,7 +54,7 @@ $albuns2 = getAlbum2();
         <div class="mb-4 overflow-hidden rounded-xl px-4">
           <div class="h-4/5 w-full scale-100">
             <h1 class="text-red-800 title-font mb-3 text-lg font-medium"><?php echo $album2['name']; ?></h1>
-            <img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/album/<?php echo $album2['img'] ?>'>
+            <img class='lazy rounded-md h-52 w-full' src='./admin/uploads/album/<?php echo $album2['img'] ?>'>
             <div class="flex justify-center">
               <a href="<?php echo $URI->base('/album/' . slugify($album2['name'])); ?>">
                 <button class="mt-4 rounded-lg bg-red-800 px-4 py-1 text-white drop-shadow-md hover:scale-105">
