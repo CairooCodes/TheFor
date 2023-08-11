@@ -44,7 +44,7 @@
       </li>
       <li>
         <a href="curso.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'curso') {
+        <?php if ($page == 'cursos') {
           echo 'bg-blue-800 text-white';
           } ?>">
           <i class="bi bi-mortarboard-fill"></i>
@@ -52,8 +52,8 @@
         </a>
       </li>
       <li>
-        <a href="foto.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'foto') {
+        <a href="fotos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'fotos') {
           echo 'bg-blue-800 text-white';
         } ?>">
           <i class="bi bi-images"></i>
@@ -62,7 +62,7 @@
       </li>
       <li>
         <a href="noticia.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'noticia') {
+        <?php if ($page == 'noticias') {
            echo 'bg-blue-800 text-white';
           } ?>">
           <i class="bi bi-journal-richtext"></i>
@@ -70,8 +70,17 @@
         </a>
       </li>
       <li>
+        <a href="noticia.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'documentacoes') {
+           echo 'bg-blue-800 text-white';
+          } ?>">
+          <i class="bi bi-file-earmark-zip-fill"></i>
+          <span class="group-hover:text-gray-700">Documentação</span>
+        </a>
+      </li>
+      <li>
         <a href="instalacao.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'instalacao') {
+        <?php if ($page == 'instalacoes') {
             echo 'bg-blue-800 text-white';
           } ?>">
           <i class="bi bi-houses-fill"></i>
@@ -80,7 +89,7 @@
       </li>
       <li>
         <a href="unidade.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'unidade') {
+        <?php if ($page == 'unidades') {
           echo 'bg-blue-800 text-white';
         } ?>">
           <i class="bi bi-buildings"></i>

@@ -63,7 +63,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                       </div>
                     </a>
 
-                    <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                    <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("/album-de-fotos.php"); ?>">
                       <div class="bg-color2 text-white rounded-lg p-3">
                         <i class="bi bi-image md:h-6 md:w-6 h-4 w-4"></i>
                       </div>

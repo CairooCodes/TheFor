@@ -27,6 +27,7 @@ $abouts = getAbout();
 		</div>
 	</div>
 	<?php include "components/footer.php"; ?>
+	<?php include "components/modal_cursos.php"; ?>
 	<?php include "components/modal_form_contato.php"; ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
