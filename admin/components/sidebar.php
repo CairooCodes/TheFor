@@ -52,8 +52,8 @@
         </a>
       </li>
       <li>
-        <a href="fotos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
-        <?php if ($page == 'fotos') {
+        <a href="albuns.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <?php if ($page == 'albuns') {
           echo 'bg-blue-800 text-white';
         } ?>">
           <i class="bi bi-images"></i>

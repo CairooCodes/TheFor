@@ -72,18 +72,20 @@ function updateAbout($id, $texto)
   $stmt->execute();
 }
 
-function updateFotos($id, $name, $img,)
+function updateAlbum($id, $name, $img, $categorie_id)
 {
   global $pdo;
   if ($img) {
     $img_lob = $img . PDO::PARAM_LOB;
-    $stmt = $pdo->prepare("UPDATE album SET name = :name, img=:img WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE album SET name = :name, categorie_id = :categorie_id, img=:img WHERE id = :id");
     $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE album SET name = :name WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE album SET name = :name, categorie_id = :categorie_id WHERE id = :id");
     $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':categorie_id', $categorie_id);
     $stmt->bindParam(':id', $id);
   }
   $stmt->execute();

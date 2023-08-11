@@ -14,10 +14,10 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-$categorie = getCategoriesAlbum();
+$categories = getCategoriesAlbum();
 $albuns = getAllAlbum();
 
-$page = 'fotos';
+$page = 'albuns';
 ?>
 
 <!DOCTYPE html>
@@ -65,14 +65,14 @@ $page = 'fotos';
             <div>
               <div id="dropdownAction" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                 <ul class="text-sm text-gray-700" aria-labelledby="dropdownActionButton">
-                  <!-- <li>
-                    <button data-modal-target="addNoticiasModal" data-modal-show="addNoticiasModal" class="block px-4 py-2 w-full hover:bg-gray-100">Adicionar Notícias</button>
-                  </li> -->
                   <li>
+                    <button data-modal-target="addAlbumModal" data-modal-show="addAlbumModal" class="block px-4 py-2 w-full hover:bg-gray-100">Adicionar Album</button>
+                  </li>
+                  <!-- <li>
                     <a href="adicionar-album.php">
                       <button class="block px-4 py-2 w-full hover:bg-gray-100">Adicionar Fotos</button>
                     </a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 w-full text-center">Exportar Dados</a>
                   </li>
@@ -116,13 +116,14 @@ $page = 'fotos';
                   <?php echo $album['categorie_type']; ?>
                 </th>
                 <td class="px-6 py-4">
-                  <a href="./editar_foto.php?id=<?php echo $album['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
-                  <a href="./controllers/delete_foto.php?id=<?php echo $album['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
+                  <a href="./editar_album.php?id=<?php echo $album['id']; ?>" type="button" class="font-medium text-blue-600 hover:underline">Editar</a>
+                  <a href="./controllers/delete_album.php?id=<?php echo $album['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>
             <?php } ?>
           </tbody>
         </table>
+        <?php include "./components/modal_add_album.php"; ?>
       </div>
     </div>
   </div>

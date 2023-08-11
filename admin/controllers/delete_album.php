@@ -6,11 +6,11 @@ if (!empty($_GET['id'])) {
   // Obter o ID do banner
   $id = $_GET['id'];
   deleteProduct($id);
-  header('Location: ../fotos.php');
+  header('Location: ../albuns.php');
   exit();
 } else {
-  // Redirecionar para a página de lista de fotos se o ID do banner não for fornecido
-  header('Location: ../fotos.php');
+  // Redirecionar para a página de lista de albuns se o ID do banner não for fornecido
+  header('Location: ../albuns.php');
   exit();
 }
 
