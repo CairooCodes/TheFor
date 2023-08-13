@@ -93,3 +93,20 @@ function getAlbumId($id){
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getInstalacoes()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM instalacoes order by name asc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getInstalacao($id)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM instalacoes WHERE id = :id");
+  $stmt->bindParam(':id', $id);
+  $stmt->execute();
+  return $stmt->fetch(PDO::FETCH_ASSOC);
+}

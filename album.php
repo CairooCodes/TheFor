@@ -53,7 +53,7 @@ if ($stmt->rowCount() > 0) {
   <div class="mx-auto max-w-7xl px-2 pt-4">
     <?php foreach ($albuns as $album) { ?>
       <div>
-        <h1 style="color: #013589;" class="text-center mt-3 text-3xl font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $album['name']; ?></h1>
+        <h1 style="color: #A20202;" class="text-center mt-3 text-3xl font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $album['name']; ?></h1>
         <div class="mb-8 mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
           <div class="grid lg:grid-cols-4 gap-8">
             <?php

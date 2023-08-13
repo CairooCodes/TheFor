@@ -90,3 +90,22 @@ function updateAlbum($id, $name, $img, $categorie_id)
   }
   $stmt->execute();
 }
+
+function updateInstalacao($id, $name, $img, $description)
+{
+  global $pdo;
+  if ($img) {
+    $img_lob = $img . PDO::PARAM_LOB;
+    $stmt = $pdo->prepare("UPDATE instalacoes SET name = :name, img=:img, description=:description WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE instalacoes SET name = :name, description=:description WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}
