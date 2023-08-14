@@ -15,7 +15,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
-$leads = getAllLeads();
+$inscricoes = getInscricoes();
 $page = 'dash';
 ?>
 <!DOCTYPE html>
@@ -89,10 +89,10 @@ $page = 'dash';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
-                Categoria
+                Curso
               </th>
               <th scope="col" class="px-6 py-3">
-                Telefone
+                WhatsApp
               </th>
               <th scope="col" class="px-6 py-3">
                 Status
@@ -100,45 +100,52 @@ $page = 'dash';
               <th scope="col" class="px-6 py-3">
                 Data de Cadastro
               </th>
-            </tr>
+              <th scope="col" class="px-6 py-3">
+                Ação
+              </th>
+            </tr> 
           </thead>
           <tbody>
-            <?php foreach ($leads as $leads) { ?>
+            <?php foreach ($inscricoes as $inscricao) { ?>
               <tr class="bg-white border-b">
                 <td class="px-6 py-4 text-gray-900 whitespace-nowrap">
-                  <div class="text-base font-semibold"><?php echo $leads['nome']; ?></div>
+                  <div class="text-base font-semibold"><?php echo $inscricao['nome']; ?></div>
                 </td>
 
                 <td class="px-6 py-4 text-gray-900 whitespace-nowrap">
-                  <div class="text-base font-semibold"><?php echo $leads['categoria']; ?></div>
+                  <div class="text-base font-semibold"><?php echo $inscricao['curso']; ?></div>
+                </td>
+                
+                <td class="px-6 py-4 text-gray-900 whitespace-nowrap">
+                  <div class="text-base font-semibold"><?php echo $inscricao['whatsapp']; ?></div>
                 </td>
 
-                <td class="px-6 py-4 text-gray-900 whitespace-nowrap">
-                  <div class="text-base font-semibold"><?php echo $leads['telefone']; ?></div>
-                </td>
                 <td class="px-6 py-4">
                   <div class="flex items-center space-x-2">
-                    <div class="text-base font-semibold"><?php echo $leads['status']; ?></div>
+                    <div class="text-base font-semibold"><?php echo $inscricao['status']; ?></div>
                     <div class="h-2.5 w-2.5 rounded-full 
                     <?php 
-                    if ($leads['status'] == 'NÃO VAI') { echo "bg-gray-500";}
-                    if ($leads['status'] == 'PAGO') { echo "bg-green-500";}
-                    if (($leads['status'] == 'Pendente') or ($leads['status'] == 'PENDENTE')) { echo "bg-yellow-500";}
+                    if ($inscricao['status'] == 'NÃO VAI') { echo "bg-red-500";}
+                    if ($inscricao['status'] == 'PAGO') { echo "bg-green-500";} 
+                    if (($inscricao['status'] == 'Pendente') or ($inscricao['status'] == 'PENDENTE')) { echo "bg-yellow-500";}
                     ?>                           
                     mr-2"></div>
                   </div>
                 </td>
                 <td class="px-6 py-4 text-gray-900 whitespace-nowrap">
-                  <div class="text-base font-semibold"><?php echo $leads['data_criacao']; ?></div>
+                  <div class="text-base font-semibold"><?php echo $inscricao['data_criacao']; ?></div>
                 </td>
                 <td class="px-6 py-4">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded btnAbrirModal" data-parametro="<?php echo htmlspecialchars(json_encode($leads)); ?>">Ver mais</button>
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded btnAbrirModal" data-parametro="<?php echo htmlspecialchars(json_encode($inscricao)); ?>">Ver mais</button>
+                </td>
+                <td class="px-6 py-4">
+                  <a href="./controllers/delete_inscricao.php?id=<?php echo $inscricao['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>
               </tr>
             <?php } ?>
           </tbody>
         </table>
-        <?php include "./components/modal_view_lead.php"; 
+        <?php include "./components/modal_view_inscricao.php"; 
         ?>
       </div>
     </div>

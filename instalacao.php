@@ -80,6 +80,7 @@ $instalacoes = getInstalacoes();
         }
     </script>
     <?php include "./components/footer.php" ?>
+    <?php include "./components/modal_cursos.php" ?>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>
     <?php include "components/modal_cursos.php"; ?>

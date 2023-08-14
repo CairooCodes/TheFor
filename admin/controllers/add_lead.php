@@ -3,11 +3,10 @@ require "../../db_config.php";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $whatsapp = $_POST['whatsapp'];
-$city = $_POST['city'];
 $type = $_POST['type'];
-$sql = "INSERT INTO leads (name, email, whatsapp, city, type) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO leads (name, email, whatsapp, type) VALUES (?,?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $email, $whatsapp, $city, $type]);
+$stmt->execute([$name, $email, $whatsapp, $type]);
 
 echo ("
 <script>

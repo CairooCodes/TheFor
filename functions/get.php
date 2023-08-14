@@ -1,6 +1,6 @@
 <?php
 
-function getAllLeads()
+function getLeads()
 {
   global $pdo;
   $stmt = $pdo->prepare("SELECT * FROM leads order by id desc");
@@ -16,17 +16,10 @@ function getBanners()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function getServices()
+function getCursos()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM services order by id asc");
-  $stmt->execute();
-  return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
-
-function getService($id){
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM services where id = $id order by id asc");
+  $stmt = $pdo->prepare("SELECT * FROM cursos order by id asc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -109,4 +102,12 @@ function getInstalacao($id)
   $stmt->bindParam(':id', $id);
   $stmt->execute();
   return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+function getInscricoes()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM inscricoes order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

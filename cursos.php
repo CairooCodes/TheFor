@@ -4,7 +4,7 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 
-$services = getServices();
+$cursos = getCursos();
 $URI = new URI();
 
 ?>
@@ -24,17 +24,17 @@ $URI = new URI();
         </h1>
         <div class="grid lg:grid-cols-4 gap-8">
 
-            <?php foreach ($services as $service) { ?>
+            <?php foreach ($cursos as $curso) { ?>
                 <div class="mb-8 mt-4 items-center rounded-xl p-2 shadow-md shadow-blue-200">
                     <div class="mr-3">
-                        <img class='lazy rounded-md h-52 w-full object-cover' src='./admin/uploads/cursos/<?php echo $service['img']; ?>'>
+                        <img class='lazy rounded-md h-52 w-full object-cover' src='./admin/uploads/cursos/<?php echo $curso['img']; ?>'>
                     </div>
                     <div>
                         <h1 class="title-font mb-1 text-center text-lg font-bold uppercase h-12 pt-2">
-                            <?php echo $service['name']; ?>
+                            <?php echo $curso['name']; ?>
                         </h1>
                         <div class="flex justify-center">
-                            <a href="<?php echo $URI->base('/curso/' . slugify($service['name'])); ?>">
+                            <a href="<?php echo $URI->base('/curso/' . slugify($curso['name'])); ?>">
                                 <button class="shadow-cla-blue mt-4 mb-4 rounded-lg bg-red-800 px-4 py-1 text-white drop-shadow-md hover:scale-105">
                                     Saiba Mais
                                 </button>
@@ -46,7 +46,9 @@ $URI = new URI();
             ?>
         </div>
     </div>
+
     <?php include "./components/footer.php" ?>
+    <?php include "./components/modal_cursos.php" ?>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/lz.js"></script>
     <?php include "components/modal_cursos.php"; ?>

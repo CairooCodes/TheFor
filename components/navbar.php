@@ -11,7 +11,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <div class="mx-auto flex px-24 justify-between">
       <div></div>
       <div class="flex space-x-4 items-center">
-        <a class="flex items-center gap-2" href="<?php echo $URI->base("/"); ?>">
+        <a class="flex items-center gap-2" href="<?php echo $URI->base("/pre-inscricao.php"); ?>">
           <i class="bi bi-arrow-right-square-fill text-lg text-white"></i>
           <span class="text-sm font-bold text-white">Pré-inscrição</span>
         </a>
@@ -25,7 +25,11 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div class="flex flex-row items-center justify-between p-4">
-            <img src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="h-10" alt="" srcset="">
+            <button>
+              <a href="<?php echo $URI->base("/"); ?>">
+                <img src="<?php echo $URI->base("/assets/img/logo.png"); ?>" class="h-10" alt="" srcset="">
+              </a>
+            </button>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
               <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                 <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -79,7 +83,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">NOTÍCIAS</a>
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">DOCUMENTAÇÃO</a>
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">FAQ</a>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">FALE CONOSCO</a>
+            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("/contato.php"); ?>">FALE CONOSCO</a>
             <button><a style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" class="px-4 py-2 mt-2 text-sm font-semibold bg-color2 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white shadow-lg" data-modal-target="addCursoModal" data-modal-show="addCursoModal">Calendário de cursos</a></button>
           </nav>
         </div>
@@ -87,13 +91,3 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     </div>
   </div>
 </header>
-<!-- <button>
-  <a data-modal-target="addContatoModal" data-modal-show="addContatoModal" class="pointer">
-    <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="btn_whats flex gap-2 justify-center items-center bg-color2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
-      </svg>
-      <h6 class="">Entre em contato aqui</h6>
-    </div>
-  </a>
-</button> -->

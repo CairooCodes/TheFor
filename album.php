@@ -71,6 +71,7 @@ if ($stmt->rowCount() > 0) {
   </div>
   </div>
   <?php include "./components/footer.php" ?>
+  <?php include "./components/modal_cursos.php" ?>
   <script src="./assets/js/script.js"></script>
   <script src="<?php echo $URI->base('./assets/js/lz.js'); ?>"></script>
   <?php include "components/modal_cursos.php"; ?>

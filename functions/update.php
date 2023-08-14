@@ -44,19 +44,21 @@ function updateBanner($id, $name, $img)
   $stmt->execute();
 }
 
-function updateProducts($id, $esporte, $description, $img)
+function updateCurso($id, $name, $img, $description, $curso_data)
 {
   global $pdo;
   if ($img) {
     $img_lob = $img . PDO::PARAM_LOB;
-    $stmt = $pdo->prepare("UPDATE esportes SET esporte = :esporte, description = :description, img=:img WHERE id = :id");
-    $stmt->bindParam(':esporte', $esporte);
+    $stmt = $pdo->prepare("UPDATE cursos SET name = :name, img=:img, description=:description, turno=:turno, curso_data=:curso_data WHERE id = :id");
+    $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':turno', $turno);
+    $stmt->bindParam(':curso_data', $curso_data);
     $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE esportes SET esporte = :esporte, description = :description WHERE id = :id");
-    $stmt->bindParam(':esporte', $esporte);
+    $stmt = $pdo->prepare("UPDATE cursos SET name = :name, description=:description, turno=:turno, curso_data=:curso_data WHERE id = :id");
+    $stmt->bindParam(':name', $name);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   }
@@ -107,5 +109,17 @@ function updateInstalacao($id, $name, $img, $description)
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   }
+  $stmt->execute();
+}
+
+function updateInscricao($id, $curso, $status, $cpf, $nome)
+{
+  global $pdo;
+  $stmt = $pdo->prepare("UPDATE inscricoes SET curso = :curso, status = :status, nome = :nome, cpf = :cpf WHERE id = :id");
+  $stmt->bindParam(':curso', $curso);
+  $stmt->bindParam(':status', $status);
+  $stmt->bindParam(':cpf', $cpf);
+  $stmt->bindParam(':nome', $nome);
+  $stmt->bindParam(':id', $id);
   $stmt->execute();
 }

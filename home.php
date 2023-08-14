@@ -4,11 +4,11 @@ require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
 $banners = getBanners();
-$services = getServices();
+$cursos = getCursos();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-	 
+
 <head>
 	<?php include "components/heads.php"; ?>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -16,13 +16,11 @@ $services = getServices();
 </head>
 
 <body>
-	<?php include "components/navbar.php";?>
-	<?php include "components/banners.php";?>
-	<?php include "components/cursos.php";?>
-	
-	<?php include "components/footer.php";?>
-	<?php include "components/modal_cursos.php";?>
-	<?php include "components/modal_form_contato.php";?>
+	<?php include "components/navbar.php"; ?>
+	<?php include "components/banners.php"; ?>
+	<?php include "components/cursos.php"; ?>
+	<?php include "components/footer.php"; ?>
+	<?php include "components/modal_cursos.php"; ?>
 
 	<script src="./assets/js/script.js"></script>
 	<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
@@ -84,4 +82,5 @@ $services = getServices();
 		});
 	</script>
 </body>
+
 </html>
