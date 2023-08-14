@@ -62,7 +62,7 @@ if ($stmt->rowCount() > 0) {
 				<div>
 					<p style="color: #A20202;" class="title-font p-4 text-md mb-1 font-semibold">DESCRIÇÃO</p>
 					<h2 class="title-font text-md mb-1">
-						<?php echo $curso['info']; ?>
+						<?php echo $curso['description']; ?>
 					</h2>
 					<h2 class="title-font text-md mb-1 mt-2">
 						<?php echo $curso['turno']; ?>

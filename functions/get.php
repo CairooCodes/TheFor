@@ -24,6 +24,13 @@ function getCursos()
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function getCurso($id){
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM cursos where id = $id order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 function getCategories()
 {
   global $pdo;
