@@ -15,7 +15,7 @@
         <div class="grid grid-cols-6 gap-6">
           <div class="col-span-6 sm:col-span-3">
             <label class="block mb-2 hidden text-sm font-medium text-gray-900">Nome</label>
-            <input type="text" name="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Convênio" required="">
+            <input type="text" name="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do local da instalação" required="">
           </div>
           <div class="col-span-6 sm:col-span-3">
             <label class="block mb-2 hidden text-sm font-medium text-gray-900">Imagem de Capa</label>

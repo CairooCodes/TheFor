@@ -123,3 +123,20 @@ function updateInscricao($id, $curso, $status, $cpf, $nome)
   $stmt->bindParam(':id', $id);
   $stmt->execute();
 }
+
+function updateDocumento($id, $name, $description)
+{
+  global $pdo;
+  if ($id) {
+    $stmt = $pdo->prepare("UPDATE documentos SET name = :name, description=:description  WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':id', $id);
+  } else {
+    $stmt = $pdo->prepare("UPDATE documentos SET name = :name, description=:description  WHERE id = :id");
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':id', $id);
+  }
+  $stmt->execute();
+}

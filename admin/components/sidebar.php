@@ -73,7 +73,7 @@
         </a>
       </li>
       <li>
-        <a href="noticia.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
+        <a href="documentos.php" class="px-3 py-2 flex items-center space-x-3 rounded-md text-gray-800 group 
         <?php if ($page == 'documentacoes') {
            echo 'bg-red-800 text-white';
           } ?>">

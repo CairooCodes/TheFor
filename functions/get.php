@@ -118,3 +118,27 @@ function getInscricoes()
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getDocumentos()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM documentos order by id asc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getDocumentos1()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM documentos where name = 'FORMAÇÃO DE VIGILANTES' order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getDocumentos2()
+{
+  global $pdo;
+  $stmt = $pdo->prepare("SELECT * FROM documentos where name = 'RECICLAGEM DE VIGILANTES' order by id desc");
+  $stmt->execute();
+  return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}

@@ -76,8 +76,6 @@ if ($stmt->rowCount() > 0) {
 	<?php include "./components/modal_cursos.php" ?>
 	<script src="./assets/js/script.js"></script>
 	<script src="./assets/js/lz.js"></script>
-	<?php include "components/modal_cursos.php"; ?>
-	<?php include "components/modal_form_contato.php"; ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
 </body>

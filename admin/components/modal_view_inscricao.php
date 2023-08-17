@@ -17,17 +17,17 @@
             <div class="col-span-6 sm:col-span-3">
               <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
               <h3 id="nome" class=" bg-gray-50 h-10  text-gray-900 text-sm rounded-lg block w-full p-2.5"></h3>
-              <input name="nome" id="nome2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Nome" required="">
+              <input name="nome" id="nome2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Nome do inscrito" required="">
             </div>
             <div class="col-span-6 sm:col-span-3">
               <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">CPF</label>
               <h3 id="cpf" class="bg-gray-50 h-10  text-gray-900 text-sm rounded-lg block w-full p-2.5"></h3>
-              <input name="cpf" id="cpf2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="CPF" required="">
+              <input name="cpf" id="cpf2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="CPF do inscrito" required="">
             </div>
             <div class="col-span-6 sm:col-span-3">
               <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">Curso</label>
               <h3 id="curso" class=" bg-gray-50 h-10  text-gray-900 text-sm rounded-lg block w-full p-2.5"></h3>
-              <input name="curso" id="curso2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Curso" required="">
+              <input name="curso" id="curso2" type="text" value="" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Curso desejado pelo inscrito" required="">
             </div>
             <div class="col-span-6 sm:col-span-3">
               <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900">Status atual</label>
