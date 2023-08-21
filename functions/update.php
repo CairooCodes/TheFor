@@ -44,21 +44,23 @@ function updateBanner($id, $name, $img)
   $stmt->execute();
 }
 
-function updateCurso($id, $name, $img, $description, $curso_data)
+function updateCurso($id, $name, $img, $turno, $curso_data, $description)
 {
   global $pdo;
   if ($img) {
     $img_lob = $img . PDO::PARAM_LOB;
-    $stmt = $pdo->prepare("UPDATE cursos SET name = :name, img=:img, description=:description, turno=:turno, curso_data=:curso_data WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE cursos SET name = :name, img=:img, turno=:turno, curso_data=:curso_data, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':description', $description);
+    $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
     $stmt->bindParam(':turno', $turno);
     $stmt->bindParam(':curso_data', $curso_data);
-    $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
+    $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $pdo->prepare("UPDATE cursos SET name = :name, description=:description, turno=:turno, curso_data=:curso_data WHERE id = :id");
+    $stmt = $pdo->prepare("UPDATE cursos SET name = :name,  turno=:turno, curso_data=:curso_data, description=:description WHERE id = :id");
     $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':turno', $turno);
+    $stmt->bindParam(':curso_data', $curso_data);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':id', $id);
   }

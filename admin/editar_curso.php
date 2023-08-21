@@ -18,15 +18,6 @@ $user = $stmt->fetch();
 $id = $_GET['id'];
 $curso = getCurso($id);
 
-function getCurso($id)
-{
-  global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM cursos WHERE id = :id");
-  $stmt->bindParam(':id', $id);
-  $stmt->execute();
-  return $stmt->fetch(PDO::FETCH_ASSOC);
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -71,11 +62,11 @@ function getCurso($id)
           <!-- Modal body -->
           <div class="p-6 space-y-6">
             <div class="grid grid-cols-6 gap-6">
+              <input id="id" name="id" type="hidden" value="<?php echo $curso['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label class="block mb-2 text-sm font-medium text-gray-900">Nome</label>
                 <input name="name" type="text" value="<?php echo $curso['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Curso" required="">
               </div>
-              <input id="id" name="id" type="hidden" value="<?php echo $curso['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
                 <input type="file" id="img" name="img">
@@ -85,7 +76,7 @@ function getCurso($id)
                 <input name="turno" type="text" value="<?php echo $curso['turno']; ?>" id="turno" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Turno do Curso" required="">
               </div>
               <div class="col-span-6 sm:col-span-3">
-                <label class="block mb-2 text-sm font-medium text-gray-900">Data</label>
+                <label class="block mb-2 text-sm font-medium text-gray-900">Data de início</label>
                 <input name="curso_data" type="text" value="<?php echo $curso['curso_data']; ?>" id="curso_data" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Data do início do curso" required="">
               </div>
             </div>

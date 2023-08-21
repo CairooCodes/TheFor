@@ -2,9 +2,9 @@
 require "../../db_config.php";
 
 $name = $_POST['name'];
-$description = $_POST['description'];
 $turno = $_POST['turno'];
 $curso_data = $_POST['curso_data'];
+$description = $_POST['description'];
 
 $dom = new DOMDocument();
 $dom->loadHTML($description);
@@ -29,7 +29,7 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 
 $new_description = $dom->saveHTML();
 
-$sql = "INSERT INTO cursos (name, description, img, turno, curso_data) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO cursos (name, img, turno, curso_data, description) VALUES (?,?,?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $description, $imgPath, $turno, $curso_data]);  
+$stmt->execute([$name, $imgPath, $turno, $curso_data, $description]);  
 header('Location: ../cursos.php');

@@ -33,10 +33,11 @@ if ($stmt->rowCount() > 0) {
 		$string2 = remove_simbolos_acentos(utf8_decode($name));
 		if ($string1 == $string2) {
 			$idpost2 = $name;
-			$cursos = getCurso($id);
+			$curso = getCurso($id);
 		}
 	}
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -51,9 +52,8 @@ if ($stmt->rowCount() > 0) {
 <body>
 	<?php include "components/navbar.php"; ?>
 	<div class="mx-auto max-w-7xl px-2 pt-4">
-		<?php foreach ($cursos as $curso) { ?>
 			<h1 style="color: #A20202;" class="text-center mt-36 text-3xl flex justify-center font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $curso['name']; ?></h1>
-			<div class="grid grid-cols-2 gap-4">
+			<div class="grid grid-cols-2 gap-4 mt-2">
 				<div class="mb-8 mt-4 rounded-xl p-2 shadow-md shadow-blue-200">
 					<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="flex justify-center swiper mySwiper2">
 						<?php echo "<img class='lazy rounded-md h-full w-2/3 object-cover' src=" . $URI->base('/admin/uploads/cursos') . '/' . $curso['img'] . '>' ?>
@@ -64,13 +64,12 @@ if ($stmt->rowCount() > 0) {
 					<h2 class="title-font text-md mb-1">
 						<?php echo $curso['description']; ?>
 					</h2>
-					<h2 class="title-font text-md mb-1 mt-2">
-						<?php echo $curso['turno']; ?>
+					
+					<h2 style="color: #A20202;" class="title-font p-4 text-md mb-1 font-semibold">
+						<?php echo $curso['valor']; ?>
 					</h2>
 				</div>
 			</div>
-		<?php }
-		?>
 	</div>
 	<?php include "./components/footer.php" ?>
 	<?php include "./components/modal_cursos.php" ?>
