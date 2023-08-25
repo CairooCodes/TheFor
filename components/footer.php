@@ -33,24 +33,24 @@
 				<div>
 					<p class="font-medium text-white">CURSOS/TREINAMENTOS</p>
 					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
-						<a class="hover:opacity-75" href="./quem-somos.php">
+						<a class="hover:opacity-75" href="#">
 							Escolta Armada
 						</a>
-						<a class="hover:opacity-75" href="./diretoria.php">
+						<a class="hover:opacity-75" href="#">
 							Extensão em Segurança Pessoal Privada
 						</a>
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Formação de Vigilantes
 						</a>
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Inspetor e supervisor
 						</a>
 
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Segurança em Grandes Eventos
 						</a>
 
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Transporte de Valores
 						</a>
 
@@ -59,19 +59,19 @@
 				<div>
 					<p class="font-medium text-white mb-10"></p>
 					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Reciclagem de Escolta Armada
 						</a>
 
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Reciclagem de Transporte de Valores
 						</a>
 
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Reciclagem de Vigilante
 						</a>
 
-						<a class="hover:opacity-75" href="./sedes.php">
+						<a class="hover:opacity-75" href="#">
 							Segurança bancária
 						</a>
 					</nav>

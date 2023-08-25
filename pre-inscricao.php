@@ -36,7 +36,7 @@ require "./functions/get.php";
                                 <label class="block my-2 text-md font-base text-gray-800">Nome Completo</label>
                                 <input type="text" name="nome" id="nome" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Seu nome completo" required="">
                                 <label class="block my-2 text-md font-base text-gray-800 pt-2">CPF</label>
-                                <input type="text" name="cpf" id="cpf" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Nº do seu CPF" required="">
+                                <input type="text" name="cpf" id="cpf" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Email" required="">
                                 <label class="block my-2 text-md font-base text-gray-800 pt-2">Endereço Completo</label>
                                 <input type="text" name="endereco" id="endereco" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Rua, Apto, Condomínio..." required="">
                                 <label class="block my-2 text-md font-base text-gray-800 pt-2">Escolaridade</label>

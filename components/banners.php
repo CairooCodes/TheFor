@@ -1,11 +1,11 @@
 <section class="lg:mt-20 mt-16 mb-4 swiper swiper_banners">
   <div class="swiper-wrapper">
     <?php
-     foreach ($banners as $banner){
+    foreach ($banners as $banner) {
     ?>
       <a class="swiper-slide" href="<?php echo $banner['link']; ?>">
-      <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banner['img'] ?>'>
-     </a>
+        <img class='lazy w-full' src='./admin/uploads/banners/<?php echo $banner['img'] ?>'>
+      </a>
     <?php
     }
     ?>

@@ -38,7 +38,7 @@ require "./functions/get.php";
                                 <label class="block my-2 text-md font-base text-gray-800">Nome Completo</label>
                                 <input type="text" name="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Seu nome completo" required="">
                                 <label class="block my-2 text-md font-base text-gray-800 pt-2">Email</label>
-                                <input type="text" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Nº do seu CPF" required="">
+                                <input type="text" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="Email" required="">
                                 <label class="block my-2 text-md font-base text-gray-800">WhatsApp</label>
                                 <input type="text" name="whatsapp" id="whatsapp" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-600 focus:border-red-600 block w-full p-2.5" placeholder="(99)9 0000-0000" required="">
                                 <input type="hidden" name="type" id="type" value="CONTATO">

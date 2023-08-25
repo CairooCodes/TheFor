@@ -44,7 +44,7 @@ function getCategories()
 function getCategoriesAlbum()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM categories WHERE type = 'Album' order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM categories WHERE type = 'album' order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -60,7 +60,7 @@ function getAbout()
 function getAllAlbum()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT Album.id, Album.img, Album.name, c.name as categorie_type FROM Album INNER JOIN categories c ON Album.categorie_id = c.id order by Album.id desc;");
+  $stmt = $pdo->prepare("SELECT album.id, album.img, album.name, c.name as categorie_type FROM album INNER JOIN categories c ON album.categorie_id = c.id order by album.id desc;");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -76,7 +76,7 @@ function getAlbum()
 function getAlbum1()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM Album where categorie_id = 1 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM album where categorie_id = 1 order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -84,7 +84,7 @@ function getAlbum1()
 function getAlbum2()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM Album where categorie_id = 2 order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM album where categorie_id = 2 order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }

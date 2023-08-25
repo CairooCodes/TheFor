@@ -13,7 +13,7 @@
                 <h3 class="uppercase text-white text-xl text-center font-semibold py-2"><?php echo $curso['name']; ?></h3>
               </div>
               <div class="flex justify-center">
-                <a href="<?php echo $URI->base('/curso/' . slugify($curso['name'])); ?>" class="bg-white rounded-md focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
+                <a href="<?php echo $URI->base('curso/' . slugify($curso['name'])); ?>" class="bg-white rounded-md focus:ring-4 rounded-md font-md text-md px-5 py-2 text-center">Saiba mais</a>
               </div>
             </div>
           </div>

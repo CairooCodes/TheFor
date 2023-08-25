@@ -5,3 +5,4 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^home$ home.php [QSA,L,NC]
 RewriteRule ^curso\/([0-9A-z_-]+)$ curso.php?slug=$1 [QSA,L,NC]
+RewriteRule ^album\/([0-9A-z_-]+)$ album.php?slug=$1 [QSA,L,NC]
