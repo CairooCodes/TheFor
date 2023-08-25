@@ -106,3 +106,9 @@ footer i {
   position: sticky;
   top: 10%;
 }
+
+.body-tiltes {
+  position: relative;
+  top: -100px;
+  padding:10px;
+}

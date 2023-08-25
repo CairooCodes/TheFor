@@ -72,7 +72,7 @@ session_start();
                 <div class="mt-7 text-center text-gray-300 text-xs">
                     <span>
                         Sistema Administrativo ©
-                        <a href="#" rel="" target="_blank" title="" class="text-red-500 hover:text-red-600 ">APCEF/PI</a></span>
+                        <a href="#" rel="" target="_blank" title="" class="text-red-500 hover:text-red-600 ">THEFOR</a></span>
                 </div>
             </div>
         </div>

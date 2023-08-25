@@ -21,39 +21,11 @@ $albuns2 = getAlbum2();
 <body>
   <?php include "./components/navbar.php" ?>
   <div class="mx-auto max-w-7xl px-2 pt-32">
-    <h1 class="text-red-800 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-      STAFF THEFOR
-    </h1>
-
-    <div class="grid lg:grid-cols-3 pt-4">
-      <?php foreach ($albuns1 as $album1) { ?>
-        <div class="mb-4 overflow-hidden rounded-xl px-4">
-          <div class="h-4/5 w-full scale-100">
-            <h1 class="text-red-800 title-font mb-3 text-lg font-medium"><?php echo $album1['name']; ?></h1>
-            <img class='lazy rounded-md h-52 w-full' data-src='./admin/uploads/album/<?php echo $album1['img'] ?>'>
-            <div class="flex justify-center">
-              <a href="<?php echo $URI->base('/album/' . slugify($album1['name'])); ?>">
-                <button class="mt-4 rounded-lg bg-red-800 px-4 py-1 text-white drop-shadow-md hover:scale-105">
-                  Veja mais
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      <?php }
-      ?>
-    </div>
-
-    <h1 class="text-red-800 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14">
-      DIRETORIA THEFOR
-    </h1>
-
     <div class="grid lg:grid-cols-3 pt-4">
       <?php foreach ($albuns2 as $album2) { ?>
         <div class="mb-4 overflow-hidden rounded-xl px-4">
           <div class="h-4/5 w-full scale-100">
-            <h1 class="text-red-800 title-font mb-3 text-lg font-medium"><?php echo $album2['name']; ?></h1>
+            <h1 class="text-red-800 text-center text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14 pb-4"><?php echo $album2['name']; ?></h1>
             <img class='lazy rounded-md h-52 w-full' src='./admin/uploads/album/<?php echo $album2['img'] ?>'>
             <div class="flex justify-center">
               <a href="<?php echo $URI->base('/album/' . slugify($album2['name'])); ?>">
