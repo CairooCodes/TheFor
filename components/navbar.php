@@ -15,7 +15,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           <i class="bi bi-arrow-right-square-fill text-lg text-white"></i>
           <span class="text-sm font-bold text-white">Pré-inscrição</span>
         </a>
-        <a href=""><i class="text-white bi bi-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=558699742045"><i class="text-white bi bi-whatsapp"></i></a>
         <a href=""><i class="text-white bi bi-instagram"></i></a>
       </div>
     </div>
