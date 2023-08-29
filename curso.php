@@ -20,7 +20,7 @@ function remove_simbolos_acentos($string)
 
 
 $url = explode("/", $_SERVER['REQUEST_URI']);
-$idpost = $url[4];
+$idpost = $url[2];
 
 $idpost2 = "";
 
@@ -51,9 +51,9 @@ if ($stmt->rowCount() > 0) {
 
 <body>
   <?php include "components/navbar.php"; ?>
-  <div class="mx-auto max-w-7xl px-2 pt-4">
-    <h1 style="color: #A20202;" class="text-center mt-36 text-3xl flex justify-center font-extrabold leading-9 uppercase tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $curso['name']; ?></h1>
-    <div class="grid grid-cols-2 gap-4 mt-2">
+  <div class="mx-auto max-w-7xl px-2">
+    <h1 style="color: #A20202;" class="text-center mt-28 lg:mt-36 text-3xl flex justify-center font-extrabold leading-9 uppercase tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-left md:text-3xl md:leading-14"><?php echo $curso['name']; ?></h1>
+    <div class="lg:grid lg:grid-cols-2 gap-4 mt-2">
       <div>
         <p style="color: #A20202;" class="title-font text-md mb-1 font-semibold">DESCRIÇÃO</p>
         <h2 class="title-font text-md mb-1">
