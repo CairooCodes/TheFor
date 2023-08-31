@@ -45,7 +45,7 @@
 						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/grandes-eventos">
 							Extensão de Eventos Sociais
 						</a>
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/grandes-eventos">
+						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/reciclagem-patrimonial">
 							Reciclagem Patrimonial
 						</a>
 					</nav>
