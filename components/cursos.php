@@ -1,5 +1,5 @@
 <section class="swiper swiper_services max-w-screen-xl mx-auto pt-10" id="servicos">
-  <h1 class="lg:text-4xl text-2xl text-center mb-4"><span class="font-extrabold text-color2">CURSOS & TREINAMENTOS</span></h1>
+  <h1 class="lg:text-3xl text-2xl text-center mb-4"><span class="font-extrabold text-color2">NOSSOS CURSOS</span></h1>
   <div class="swiper swiper_posts">
     <div class="swiper-wrapper">
       <?php foreach ($cursos as $curso) { ?>
