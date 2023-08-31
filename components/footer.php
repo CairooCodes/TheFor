@@ -31,19 +31,22 @@
 			</div>
 			<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
 				<div>
-					<p class="font-medium text-white">CURSOS/TREINAMENTOS</p>
+					<p class="font-medium text-white">CURSOS</p>
 					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/curso-vip">
-							CURSO VIP
-						</a>
 						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/curso-de-formacao">
-							CURSO DE FORMAÇÃO
+							Curso de Formação de Vigilantes
+						</a>
+						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/curso-vip">
+							Extensão de Segurança Pessoal Privada ( VIP )
 						</a>
 						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/escolta-armada">
-							ESCOLTA ARMADA
+							Extensão de Escolta Armada
 						</a>
 						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/grandes-eventos">
-							GRANDES EVENTOS
+							Extensão de Eventos Sociais
+						</a>
+						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/grandes-eventos">
+							Reciclagem Patrimonial
 						</a>
 					</nav>
 				</div>
