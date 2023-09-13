@@ -33,21 +33,13 @@
 				<div>
 					<p class="font-medium text-white">CURSOS</p>
 					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/curso-de-formacao">
-							Curso de Formação de Vigilantes
-						</a>
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/curso-vip">
-							Extensão de Segurança Pessoal Privada ( VIP )
-						</a>
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/escolta-armada">
-							Extensão de Escolta Armada
-						</a>
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/grandes-eventos">
-							Extensão de Eventos Sociais
-						</a>
-						<a class="hover:opacity-75" href="https://teste.thefor.com.br/curso/reciclagem-patrimonial">
-							Reciclagem Patrimonial
-						</a>
+						<?php foreach ($cursos as $curso) { ?>
+							<a class="hover:opacity-75" href="<?php echo $URI->base('curso/' . slugify($curso['name'])); ?>">
+								<?php echo $curso['name']; ?>
+							</a>
+						<?php
+						}
+						?>
 					</nav>
 				</div>
 
@@ -57,20 +49,20 @@
 						<a class="hover:opacity-75" href="./contato.php">
 							CONTATOS
 						</a>
-						<a class="hover:opacity-75" href="./pre-inscricao.php">
+						<!-- <a class="hover:opacity-75" href="./pre-inscricao.php">
 							PRÉ-INSCRIÇÃO
-						</a>
+						</a> -->
 					</nav>
 				</div>
 
-				<div>
+				<!-- <div>
 					<p class="font-medium text-white">LEGAL</p>
 					<nav class="mt-4 flex flex-col space-y-2 text-sm text-white">
 						<a class="hover:opacity-75" href="./privacidade.php">
 							PRIVACIDADE
 						</a>
 					</nav>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<p class="mt-12 text-xs text-white text-center">

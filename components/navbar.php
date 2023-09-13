@@ -11,10 +11,10 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <div class="mx-auto flex px-24 justify-between">
       <div></div>
       <div class="flex space-x-4 items-center">
-        <a class="flex items-center gap-2" href="<?php echo $URI->base("pre-inscricao.php"); ?>">
+        <!-- <a class="flex items-center gap-2" href="<?php echo $URI->base("pre-inscricao.php"); ?>">
           <i class="bi bi-arrow-right-square-fill text-lg text-white"></i>
           <span class="text-sm font-bold text-white">Pré-inscrição</span>
-        </a>
+        </a> -->
         <a href="https://api.whatsapp.com/send?phone=558699742045"><i class="text-white bi bi-whatsapp"></i></a>
         <a href="https://www.instagram.com/theforvigilantes/"><i class="text-white bi bi-instagram"></i></a>
       </div>
@@ -58,14 +58,14 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                       </div>
                     </a>
 
-                    <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("instalacao.php"); ?>">
+                    <!-- <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("instalacao.php"); ?>">
                       <div class="bg-color2 text-white rounded-lg p-3">
                         <i class="bi bi-geo-alt-fill md:h-6 md:w-6 h-4 w-4"></i>
                       </div>
                       <div class="ml-3">
                         <p class="font-semibold">Nossas instalações</p>
                       </div>
-                    </a>
+                    </a> -->
 
                     <a class="flex flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("album-de-fotos.php"); ?>">
                       <div class="bg-color2 text-white rounded-lg p-3">
@@ -79,7 +79,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 </div>
               </div>
             </div>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("cursos.php"); ?>">CURSOS</a>
+            <!-- <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("cursos.php"); ?>">CURSOS</a> -->
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("documentacao.php"); ?>">DOCUMENTAÇÃO</a>
             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="<?php echo $URI->base("contato.php"); ?>">FALE CONOSCO</a>
             <button><a href="https://api.whatsapp.com/send?phone=558699742045&text=Ol%C3%A1,%20gostaria%20de%20um%20atendimento.%20Voc%C3%AA%20pode%20me%20ajudar%3F%20(site)" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" class="px-4 py-2 mt-2 text-sm font-semibold bg-color2 rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-900 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white shadow-lg">Calendário de cursos</a></button>

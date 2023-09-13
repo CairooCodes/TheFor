@@ -18,9 +18,10 @@ $cursos = getCursos();
 <body>
   <?php include "components/navbar.php"; ?>
   <?php include "components/banners.php"; ?>
-  <?php include "components/cursos.php"; ?>
+  <!-- <?php include "components/cursos.php"; ?> -->
+
   <!-- component -->
-  <div class="container mx-auto p-5">
+  <!-- <div class="container mx-auto p-5">
     <div class="bg-color2 text-white text-center py-10 px-20 rounded-lg shadow-md relative">
       <img src="./assets/img/logo.png" class="w-20 mx-auto mb-4 rounded-lg">
       <h3 class="text-2xl font-semibold mb-4">Faça já sua pré-inscrição</h3>
@@ -33,7 +34,7 @@ $cursos = getCursos();
       <div class="w-12 h-12 bg-white rounded-full absolute top-1/2 transform -translate-y-1/2 right-0 -mr-6"></div>
 
     </div>
-  </div>
+  </div> -->
   <div class="mx-auto max-w-6xl pt-10">
     <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-color2 uppercase lg:mb-8 lg:text-3xl">
       Nossas Redes Sociais</h2>
